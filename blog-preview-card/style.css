@@ -1,3 +1,28 @@
+@font-face {
+    font-family: "Figtree-ExtraBold";
+    src: url(assets/fonts/Figtree-ExtraBold.ttf)format('truetype');
+    font-weight:800;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Figtree-semibold";
+    src: url(assets/fonts/Figtree-SemiBold.ttf)format('truetype');
+    font-weight:500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Figtree-italic";
+    src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf)format('truetype');
+    font-style: italic;
+}
+@font-face {
+    font-family: "Figtree-variable-font";
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf)format('truetype');
+    font-style: normal;
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +30,7 @@
 
 body{
     background-color: #f4d04e;
-    font-family: "Figtree", sans-serif;
+    font-family: "Figtree-variable-font", sans-serif;
     color: #111111;
     line-height: 150%;
 }
@@ -15,46 +40,46 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 1.5625rem;
 }
 
 .card div{
     background-color: white;
-    width: 279px;
-    height: 453px; 
+    width: 17.438rem;
+    height: 28.313rem; 
     border-radius: 1.25rem;
-    padding: 24px; 
+    padding: 1.5rem; 
     box-shadow: 10px 10px 0px #111111;
     border: #111111 solid 1px;
-
-   
 }
 
+
 .blog_image{
-    width: 279px;
-    border-radius:10px;
-    margin-bottom: 24px;
+    width: 17.438rem;
+    border-radius:0.625rem;
+    margin-bottom: 1.5rem;
     background-color: #111111;
 }
 
 h1{
-    font-size: 14px;
+    font-size: 0.875rem ;
     background-color: #f4d04e;
-    border-radius: 4px;
-    width: 73px;
-    padding: 1px 0;
+    border-radius: 0.25rem;
+    width: 4.563rem;
+    padding: 0.063rem 0;
     text-align: center;
     font-weight: bold;
 }
 
 .pub_date{
-    font-size: 12px;
-    font-weight: 500px;
+    font-size: 0.75rem;
+    font-weight: 500;
     margin: 12px 0;
 }
 
 h2{
     font-size: 20px;
-    font-weight: 800px;
+    font-weight: 800;
 }
 
 h2:hover {
@@ -64,27 +89,22 @@ h2:hover {
 
 .description{
     color: #6b6b6b;
-    font-size: 14px;
-    margin: 12px 0;
+    font-size: 0.875rem;
+    margin: 0.75rem 0;
     font-weight: 400;
 }
 
 figure{
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 0.75rem;
     font-weight: bold;
-    margin-top: 24px;
-    font-size: 14px;
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
 }
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
-
-
-
-
-
 
 
 @media screen and (min-width:1140px) { 
@@ -98,25 +118,25 @@ figure{
     }
 
     .blog_image{
-       width: 336px;
-       height: 200px;
+       width: 21rem;
+       height: 12.5rem;
     }
     
     h1{
-        font-size: 14px;
+        font-size: 0.875rem;
         background-color: #f4d04e;
-        border-radius: 4px;
-        width: 82px;
-        padding: 3px 0;
+        border-radius: 0.25rem;
+        width: 5.125rem;
+        padding: 0.188rem 0;
         text-align: center;
         font-weight: bold;
     }
     h2{
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     .description {
-        font-size: 16px;
+        font-size: 1rem;
 
     }
 }
